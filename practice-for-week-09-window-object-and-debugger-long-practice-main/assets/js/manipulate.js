@@ -18,4 +18,6 @@ export function changeAboutMe() {
      passage about yourself */
 
     // Your code here
+    let passage = document.body.children[1].children[1]
+    passage.innerText = "New Text"
 }
