@@ -28,6 +28,8 @@ const select = () => {
     // 4. Get inner span with text "you"
     //selects the span element that is a descendant of an element with the id "wrapper"
     var innerSpan = document.querySelector('#wrapper span');
+
+    // Log innerSpan to the console
     console.log(innerSpan);
 
 
