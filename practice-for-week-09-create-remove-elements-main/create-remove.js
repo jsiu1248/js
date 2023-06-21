@@ -9,14 +9,18 @@ add.addEventListener("click", async () => {
 
         /*--------------- Get breed (Hint: Parse from URL) ---------------- */
         // Your code here
+        // maybe use regex, substring, or split
 
         /*------------ Create new dog card with the url above ------------- */
         /* (use the HTML structure for the current dog image in the index.html
             file to create a new image with the url) */
         // Your code here
-
+        // create url similar to 
+        // <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" />
+            
         /* Add the new dog card as a child to the ul in the .gallery element */
         // Your code here
+        // use createElement, setAttribute, and appendChild
 
     } catch (e) {
         console.log("Couldn't fetch dog :(")
@@ -31,6 +35,7 @@ removeFirst.addEventListener("click", () => {
 
     /*-------------------- Remove the first dog card --------------------- */
     // Your code here
+    // need to use the querySelector and remove method
 });
 
 /************************** REMOVE LAST DOG BUTTON ***************************/
@@ -38,7 +43,9 @@ const removeLast = document.getElementById("remove-last");
 removeLast.addEventListener("click", () => {
     /*-------------------- Select the last dog card ----------------------- */
     // Your code here
+    // 
 
     /*-------------------- Remove the last dog card ----------------------- */
     // Your code here
+    // need to use the query selector and the remove method again
 });
