@@ -32,10 +32,15 @@ const removeFirst = document.getElementById("remove-first");
 removeFirst.addEventListener("click", () => {
     /*-------------------- Select the first dog card --------------------- */
     // Your code here
+    const firstDogCard = document.querySelector(".gallery ul li:first-child");
 
     /*-------------------- Remove the first dog card --------------------- */
     // Your code here
     // need to use the querySelector and remove method
+    if (firstDogCard) {
+        firstDogCard.remove();
+    }
+
 });
 
 /************************** REMOVE LAST DOG BUTTON ***************************/
@@ -44,8 +49,13 @@ removeLast.addEventListener("click", () => {
     /*-------------------- Select the last dog card ----------------------- */
     // Your code here
     // 
+    const lastDogCard = document.querySelector(".gallery ul li:last-child");
+
 
     /*-------------------- Remove the last dog card ----------------------- */
     // Your code here
     // need to use the query selector and the remove method again
+    if (lastDogCard) {
+        lastDogCard.remove();
+    }
 });
