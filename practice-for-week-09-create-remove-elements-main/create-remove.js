@@ -21,6 +21,8 @@ add.addEventListener("click", async () => {
         /* Add the new dog card as a child to the ul in the .gallery element */
         // Your code here
         // use createElement, setAttribute, and appendChild
+        const gallery = document.querySelector(".gallery ul");
+        gallery.appendChild(newDogCard);
 
     } catch (e) {
         console.log("Couldn't fetch dog :(")
