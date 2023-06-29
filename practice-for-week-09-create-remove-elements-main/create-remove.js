@@ -19,6 +19,11 @@ add.addEventListener("click", async () => {
         // Your code here
         // create url similar to 
         // <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" />
+        const newDogCard = document.createElement("li");
+        const figure = document.createElement("figure");
+        const img = document.createElement("img");
+        const figcaption = document.createElement("figcaption");
+
             
         /* Add the new dog card as a child to the ul in the .gallery element */
         // Your code here
