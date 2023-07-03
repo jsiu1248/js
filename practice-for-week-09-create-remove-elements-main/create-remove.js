@@ -24,6 +24,13 @@ add.addEventListener("click", async () => {
         const img = document.createElement("img");
         const figcaption = document.createElement("figcaption");
 
+        img.setAttribute("src", url);
+        figcaption.textContent = breed;
+
+        figure.appendChild(img);
+        figure.appendChild(figcaption);
+        newDogCard.appendChild(figure);
+
             
         /* Add the new dog card as a child to the ul in the .gallery element */
         // Your code here
