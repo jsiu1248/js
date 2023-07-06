@@ -8,8 +8,8 @@ add.addEventListener("click", async () => {
         const url = data.message; // URL of new dog image
 
         /*--------------- Get breed (Hint: Parse from URL) ---------------- */
-        // Your code here
-        // maybe use regex, substring, or split
+
+        // get the breed as the fourth element
         const breed = url.split("/")[4];
 
 
