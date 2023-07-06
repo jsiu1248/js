@@ -16,9 +16,9 @@ add.addEventListener("click", async () => {
         /*------------ Create new dog card with the url above ------------- */
         /* (use the HTML structure for the current dog image in the index.html
             file to create a new image with the url) */
-        // Your code here
-        // create url similar to 
         // <img src="https://images.dog.ceo/breeds/hound-afghan/n02088094_1007.jpg" />
+
+        // create newDogCards with the images and captions inside.
         const newDogCard = document.createElement("li");
         const figure = document.createElement("figure");
         const img = document.createElement("img");
@@ -33,8 +33,6 @@ add.addEventListener("click", async () => {
 
             
         /* Add the new dog card as a child to the ul in the .gallery element */
-        // Your code here
-        // use createElement, setAttribute, and appendChild
         const gallery = document.querySelector(".gallery ul");
         gallery.appendChild(newDogCard);
 
@@ -51,8 +49,6 @@ removeFirst.addEventListener("click", () => {
     const firstDogCard = document.querySelector(".gallery ul li:first-child");
 
     /*-------------------- Remove the first dog card --------------------- */
-    // Your code here
-    // need to use the querySelector and remove method
     if (firstDogCard) {
         firstDogCard.remove();
     }
@@ -63,14 +59,10 @@ removeFirst.addEventListener("click", () => {
 const removeLast = document.getElementById("remove-last");
 removeLast.addEventListener("click", () => {
     /*-------------------- Select the last dog card ----------------------- */
-    // Your code here
-    // 
     const lastDogCard = document.querySelector(".gallery ul li:last-child");
 
 
     /*-------------------- Remove the last dog card ----------------------- */
-    // Your code here
-    // need to use the query selector and the remove method again
     if (lastDogCard) {
         lastDogCard.remove();
     }
