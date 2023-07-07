@@ -24,6 +24,7 @@ add.addEventListener("click", async () => {
         const img = document.createElement("img");
         const figcaption = document.createElement("figcaption");
 
+        //it dynamically assigns a new source URL to the img element, allowing you to change the image displayed on the webpage programmatically. 
         img.setAttribute("src", url);
         figcaption.textContent = breed;
 
